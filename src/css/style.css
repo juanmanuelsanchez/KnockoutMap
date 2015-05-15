@@ -108,6 +108,19 @@ hr {
   z-index: 5;
 
   }
+#place-name {
+
+  /*text-align: left;*/
+  float: left;
+  margin: 0%;
+
+}
+#place-rating {
+
+  /*text-align: right;*/
+  float: right;
+  margin: 0%;
+}
 @-webkit-keyframes fadeIn {
 
   from {opacity:0;}

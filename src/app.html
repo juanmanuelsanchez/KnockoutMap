@@ -40,6 +40,11 @@
     </ul>
   </div>
 
+  <div class="fluid" id="place" data-bind="with: currentPlace">
+    <h2 id="place-name" data-bind="text: name" class="fluid"></h2>
+    <h3 id="place-rating" data-bind="text: rating" class="fluid"></h3>
+  </div>
+
   <div id="mapDiv" class="fluid"></div>
   <div id="panel" class="fluid">
     <button id="show">Populate & Choose</button>
