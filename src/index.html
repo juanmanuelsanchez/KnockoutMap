@@ -35,16 +35,15 @@
     </ul>
   </div>
 
-  <div class="fluid" id="place" data-bind="with: currentPlace">
-    <h2 id="place-name" data-bind="text: name" class="fluid"></h2>
-    <h3 id="place-rating" data-bind="text: rating" class="fluid"></h3>
-  </div>
+  <ul class="fluid" id="place" data-bind="with: currentPlace">
+    <li id="place-name" data-bind="text: name" class="item"></li>
+    <li id="place-rating" data-bind="text: rating" class="item"></li>
+  </ul>
 
   <div id="mapDiv" class="fluid"></div>
   <div id="panel" class="fluid">
     <button id="show">Populate & Choose</button>
     <button id="hide">Hide markers</button>
-
   </div>
 </div>
 

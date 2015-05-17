@@ -15,7 +15,7 @@ img, object, embed, video {
 	max-width: 100%;
   }
 
-li {
+#list-item { /*li*/
   cursor:pointer;
   padding: 10px 10px 0 10px;
   border-bottom: 1px dotted black;
@@ -26,7 +26,7 @@ li {
   transition: all 0.3s ease-out;
   }
 
-li:hover {
+#list-item:hover { /*li*/
   background: #FDF6E3;
   opacity: 1;
   -webkit-transform: scale(1.1);
@@ -35,7 +35,7 @@ li:hover {
   transform: scale(1.1);
   }
 
-li:active {
+#list-item:active { /*li*/
 
   background: #4F4F4F;
   opacity: 1;
@@ -52,6 +52,8 @@ hr {
   border: double;
 
 }
+
+
 
 
 /* IE 6 does not support max-width so default to width 100% */
@@ -86,6 +88,16 @@ hr {
     background-color: rgba(255,255,255,0.7);
   }
 
+.item {
+
+  display: inline-block;
+  list-style: none;
+  margin-left: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #002425;
+
+}
 
 #mapDiv {
 
@@ -108,19 +120,29 @@ hr {
   z-index: 5;
 
   }
+
+
+#place {
+
+  position: relative;
+  width: 100%;
+  top: 48%;
+  text-align: left;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+}
+
 #place-name {
 
-  /*text-align: left;*/
-  float: left;
-  margin: 0%;
+  margin-left: -1%;
 
 }
 #place-rating {
 
-  /*text-align: right;*/
-  float: right;
-  margin: 0%;
+  margin-left: 1%;
 }
+
 @-webkit-keyframes fadeIn {
 
   from {opacity:0;}
@@ -168,6 +190,17 @@ hr {
     display: none;
   }
 
+#place-name {
+
+  margin-left: -10%;
+
+}
+
+#place-rating {
+
+  margin-left: 2%;
+}
+
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
@@ -209,4 +242,16 @@ hr {
 .hide_desktop {
     display: none;
   }
+
+  #place-name {
+
+    margin-left: -1%;
+
+  }
+
+  #place-rating {
+
+    margin-left: 1%;
+  }
+
 }
